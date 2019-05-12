@@ -38,6 +38,7 @@
     --info: #11cdef;
     --warning: #fb6340;
     --danger: #f5365c;
+    --gold: #887100;
     --light: #adb5bd;
     --dark: #212529;
     --default: #172b4d;
@@ -7990,7 +7991,7 @@ button.bg-warning:focus
     background-color: #fa3a0e !important;
 }
 
-.bg-danger
+.bg-danger 
 {
     background-color: #f5365c !important;
 }
@@ -8001,6 +8002,19 @@ button.bg-danger:hover,
 button.bg-danger:focus
 {
     background-color: #ec0c38 !important;
+}
+
+.bg-gold
+{
+    background-color: #887100 !important;
+}
+
+a.bg-gold:hover,
+a.bg-gold:focus,
+button.bg-gold:hover,
+button.bg-gold:focus
+{
+    background-color: #584a01 !important;
 }
 
 .bg-light
@@ -15074,6 +15088,11 @@ button.bg-lighter:focus
     background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
 }
 
+.bg-gradient-gold
+{
+    background: linear-gradient(87deg, #887100 0, #d9b600 100%) !important;
+}
+
 .bg-gradient-light
 {
     background: linear-gradient(87deg, #adb5bd 0, #adaebd 100%) !important;
@@ -15428,6 +15447,11 @@ button.section-darker:focus
 .bg-gradient-danger
 {
     background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+}
+
+.bg-gradient-gold
+{
+    background: linear-gradient(87deg, #887100 0, #d9b600 100%) !important;
 }
 
 .bg-gradient-light
@@ -16466,10 +16490,23 @@ a.text-orange:focus
     color: #ffd600 !important;
 }
 
+
 a.text-yellow:hover,
 a.text-yellow:focus
 {
     color: #ccab00 !important;
+}
+
+.text-gold
+{
+    color: #b39700 !important;
+}
+
+
+a.text-gold:hover,
+a.text-gold:focus
+{
+    color: #8c7600!important;
 }
 
 .text-green

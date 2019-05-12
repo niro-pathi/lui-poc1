@@ -290,19 +290,17 @@ export const chartExample1 = {
         },
         ticks: {
           callback: function(value) {
-            if (!(value % 10)) {
-              return '$' + value + 'k';
-            }
+            return  value ;
           }
         }
       }]
     }
   },
   data: {
-    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    labels: ['Provisional', 'Full', 'VIP', 'RSG', 'Security', 'Cage'],
     datasets: [{
-      label: 'Performance',
-      data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+      label: 'Count',
+      data: [12870, 9867, 1677, 608, 1785, 4090]
     }]
   }
 }
@@ -339,10 +337,10 @@ export const chartExample2 = {
     }
   },
   data: {
-    labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ['SignUps', 'Updates', 'Conversion', 'Merge', 'Close', 'DAB'],
     datasets: [
       {
-        label: "Sales",
+        label: "Actions",
         data: [25, 20, 30, 22, 17, 29]
       }
     ]

@@ -27,11 +27,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
 
     this.datasets = [
-      [0, 20, 10, 30, 15, 40, 20, 60, 60],
-      [0, 20, 5, 25, 10, 30, 15, 40, 40]
+      [12870, 9867, 1677, 608, 1785, 4090],
+      [1780, 2087, 509, 257, 189, 309]
     ];
     this.data = this.datasets[0];
-
 
     var chartOrders = document.getElementById('chart-orders');
 
@@ -52,10 +51,6 @@ export class DashboardComponent implements OnInit {
 			data: chartExample1.data
 		});
   }
-
-
-
-
 
   public updateOptions() {
     this.salesChart.data.datasets[0].data = this.data;
